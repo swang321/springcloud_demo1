@@ -27,4 +27,40 @@
         
     3 配置yml
     
-//  路由熔断  服务降级
+
+5   熔断器 路由熔断  服务降级
+
+    1   添加依赖  
+         <dependency>
+              <groupId>org.springframework.cloud</groupId>
+              <artifactId>spring-cloud-starter-netflix-hystrix</artifactId>
+         </dependency>      
+    2   启动类添加注解  @EnableCircuitBreaker
+    3   请求方法 添加@ HystrixCommand(fallbackMethod = "回调函数") 回调函数名自定义
+    4   新建 以 回调函数 为名的方法，返回值和参数 必须和正式方法相同  不然会报错
+    
+6   熔断监控    Hystrix Dashboard   turbine
+
+    1   添加依赖    
+        <dependency>
+        	<groupId>org.springframework.cloud</groupId>
+        	<artifactId>spring-cloud-starter-hystrix-dashboard</artifactId>
+        </dependency>
+        <dependency>
+        	<groupId>org.springframework.boot</groupId>
+        	<artifactId>spring-boot-starter-actuator</artifactId>
+        </dependency>
+    2   启动类添加注解     @EnableHystrixDashboard
+    3   启动类添加配置servlet bean 
+            @Bean
+            public ServletRegistrationBean getServlet() {
+                HystrixMetricsStreamServlet streamServlet = new HystrixMetricsStreamServlet();
+                ServletRegistrationBean registrationBean = new ServletRegistrationBean(streamServlet);
+                registrationBean.setLoadOnStartup(1);
+                registrationBean.addUrlMappings("/actuator/hystrix.stream");
+                registrationBean.setName("HystrixStreamServletBean");
+                return registrationBean;
+            }
+    3   访问  http://localhost:8083/hystrix  首页
+    4   输入  http://localhost:8083/actuator/hystrix.stream   点击 Monitor Stream 出现 监控页面  熔断监控完成
+    5   turbine 是  hystrix.stream 的集合显示

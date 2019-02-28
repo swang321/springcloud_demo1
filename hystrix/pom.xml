@@ -3,25 +3,28 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.eureka-server.demo</groupId>
-    <artifactId>eureka-server</artifactId>
+    <groupId>com.hystrix.demo</groupId>
+    <artifactId>hystrix</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <packaging>jar</packaging>
-
-    <name>eureka-server</name>
+    <name>hystrix</name>
     <description>Demo project for Spring Boot</description>
-
 
     <parent>
         <groupId>com.cloud.demo</groupId>
         <artifactId>springcloud</artifactId>
         <version>1.0-SNAPSHOT</version>
     </parent>
-
     <dependencies>
+
+        <!--turbine-->
+        <!--<dependency>-->
+            <!--<groupId>org.springframework.cloud</groupId>-->
+            <!--<artifactId>spring-cloud-netflix-turbine</artifactId>-->
+        <!--</dependency>-->
+
         <dependency>
             <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
+            <artifactId>spring-cloud-starter-netflix-turbine</artifactId>
         </dependency>
 
     </dependencies>

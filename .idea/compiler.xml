@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="consumer" />
         <module name="eureka-server" />
+        <module name="hystrix" />
         <module name="provider" />
       </profile>
     </annotationProcessing>
