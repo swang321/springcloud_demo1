@@ -17,5 +17,5 @@ spring:
         git:
           uri: https://gitee.com/swang_whh/spring-cloud-demo.git  # 配置git仓库的地址
           search-paths: /config-repo                      # git仓库地址下的相对地址，可以配置多个，用,分割。
-          username: swang321                             # git仓库的账号
+          username: 978530201@qq.com                             # git仓库的账号
           password: gjm456...                            # git仓库的密码
