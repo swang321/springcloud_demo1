@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="cloud-config" />
+        <module name="config-client" />
         <module name="consumer" />
         <module name="eureka-server" />
         <module name="hystrix" />

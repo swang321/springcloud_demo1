@@ -1,0 +1,12 @@
+server:
+  port: 8086
+
+spring:
+  application:
+    name: spring-cloud-config-client
+
+eureka:
+  client:
+    serviceUrl:
+      #  需要注册到的地址
+      defaultZone: http://localhost:8080/eureka/

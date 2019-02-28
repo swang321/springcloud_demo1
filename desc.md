@@ -64,3 +64,9 @@
     3   访问  http://localhost:8083/hystrix  首页
     4   输入  http://localhost:8083/actuator/hystrix.stream   点击 Monitor Stream 出现 监控页面  熔断监控完成
     5   turbine 是  hystrix.stream 的集合显示
+    
+    spring cloud-config 配置中心
+    
+    http://localhost:8084/config/pro
+    http://localhost:8084/config/dev
+    
