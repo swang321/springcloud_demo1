@@ -78,7 +78,3 @@ spring cloud 练习
     http://localhost:8084/config/pro
     http://localhost:8084/config/dev
     
-
-#### 参与贡献
-
-
