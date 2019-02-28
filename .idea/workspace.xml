@@ -2,14 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="171c9fe4-3b11-44ea-93e3-a62d9219b143" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/config-client/src/main/java/com/cloudconfigclient/demo/configclient/controller/ConfigController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config-client/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-config/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-config/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/desc.md" beforeDir="false" afterPath="$PROJECT_DIR$/desc.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -41,7 +35,7 @@
           <entry key="class" value="3" />
           <entry key="gitignore" value="3" />
           <entry key="java" value="78" />
-          <entry key="md" value="10" />
+          <entry key="md" value="12" />
           <entry key="properties" value="12" />
           <entry key="xml" value="35" />
           <entry key="yml" value="25" />
@@ -51,7 +45,7 @@
         <counts>
           <entry key="CLASS" value="3" />
           <entry key="JAVA" value="78" />
-          <entry key="Markdown" value="10" />
+          <entry key="Markdown" value="12" />
           <entry key="PLAIN_TEXT" value="3" />
           <entry key="Properties" value="12" />
           <entry key="XML" value="35" />
@@ -91,11 +85,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config-client/src/main/java/com/cloudconfigclient/demo/configclient/controller/ConfigController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="550">
-              <caret line="25" column="1" lean-forward="true" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
+            <state relative-caret-position="396">
+              <caret line="18" column="5" lean-forward="true" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#315#316#0" expanded="true" />
@@ -139,10 +133,34 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/desc.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="FIRST">
+              <first_editor relative-caret-position="274">
+                <caret line="56" column="43" selection-end-line="71" selection-end-column="4" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config-client/src/main/resources/bootstrap.yml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="66">
               <caret line="3" column="16" lean-forward="true" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="90">
+                <caret line="57" column="22" selection-start-line="57" selection-start-column="22" selection-end-line="57" selection-end-column="22" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -191,7 +209,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/eureka-server/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/provider/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/provider/src/main/java/com/serverprovide/demo/provider/controller/HelloController.java" />
         <option value="$PROJECT_DIR$/consumer/src/main/java/com/serverconsume/demo/consumer/controller/ConsumerController.java" />
@@ -242,6 +259,7 @@
         <option value="$PROJECT_DIR$/config-client/src/main/resources/bootstrap.yml" />
         <option value="$PROJECT_DIR$/config-client/src/main/java/com/cloudconfigclient/demo/configclient/controller/HelloController.java" />
         <option value="$PROJECT_DIR$/config-client/src/main/java/com/cloudconfigclient/demo/configclient/controller/ConfigController.java" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -819,7 +837,7 @@
     <property name="RequestMappingsPanelWidth2" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551345495822" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551346670148" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -927,7 +945,7 @@
       <workItem from="1551233501838" duration="3163000" />
       <workItem from="1551236680208" duration="4643000" />
       <workItem from="1551249236407" duration="13408000" />
-      <workItem from="1551316587130" duration="22601000" />
+      <workItem from="1551316587130" duration="22691000" />
     </task>
     <task id="LOCAL-00001" summary="0.0">
       <created>1551340638076</created>
@@ -950,17 +968,24 @@
       <option name="project" value="LOCAL" />
       <updated>1551341767464</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="0.0">
+      <created>1551346588142</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1551346588142</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="43815000" />
+    <option name="totallyTimeSpent" value="43905000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20149253" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20149253" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -971,7 +996,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.3991323" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.27361563" />
+      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.27361563" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -1028,16 +1053,6 @@
     <entry file="file://$PROJECT_DIR$/consumer/src/main/java/com/serverconsume/demo/consumer/hystrix/ListRemote.java" />
     <entry file="file://$PROJECT_DIR$/consumer/src/main/java/com/serverconsume/demo/consumer/hystrix/ListGetHystrix.java" />
     <entry file="file://$PROJECT_DIR$/README.en.md" />
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="308">
-            <caret line="14" selection-start-line="14" selection-end-line="14" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/consumer/src/main/java/com/serverconsume/demo/consumer/hystrix/ServiceHystrix.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="726">
@@ -1248,16 +1263,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/desc.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="332">
-            <caret line="71" column="4" selection-start-line="71" selection-start-column="4" selection-end-line="71" selection-end-column="4" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
@@ -1354,8 +1359,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/config-client/src/main/java/com/cloudconfigclient/demo/configclient/controller/ConfigController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="550">
-          <caret line="25" column="1" lean-forward="true" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
+        <state relative-caret-position="396">
+          <caret line="18" column="5" lean-forward="true" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#315#316#0" expanded="true" />
@@ -1363,6 +1368,26 @@
             <element signature="e#502#503#0" expanded="true" />
             <element signature="e#532#533#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/desc.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="274">
+            <caret line="56" column="43" selection-end-line="71" selection-end-column="4" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="90">
+            <caret line="57" column="22" selection-start-line="57" selection-start-column="22" selection-end-line="57" selection-end-column="22" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
