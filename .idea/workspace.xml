@@ -2,21 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="171c9fe4-3b11-44ea-93e3-a62d9219b143" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config-repo/spring-cloud-config-client-dev.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config-repo/spring-cloud-config-client-pro.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-config/src/main/java/com/cloudconfig/demo/cloudconfig/CloudConfigApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-config/src/main/java/com/cloudconfig/demo/cloudconfig/CloudConfigApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-client/src/main/java/com/cloudconfigclient/demo/configclient/ConfigClientApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/config-client/src/main/java/com/cloudconfigclient/demo/configclient/ConfigClientApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config-client/src/main/java/com/cloudconfigclient/demo/configclient/controller/ConfigController.java" beforeDir="false" afterPath="$PROJECT_DIR$/config-client/src/main/java/com/cloudconfigclient/demo/configclient/controller/ConfigController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config-client/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config-client/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-client/src/main/resources/bootstrap.yml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/config-repo/config-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config-repo/config-dev.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-repo/config-pro.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config-repo/config-pro.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/desc.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hystrix/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/hystrix/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hystrix/src/main/java/com/hystrix/demo/hystrix/HystrixApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/hystrix/src/main/java/com/hystrix/demo/hystrix/HystrixApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hystrix/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/hystrix/src/main/resources/application.yml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -47,44 +38,44 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="class" value="7" />
+          <entry key="class" value="8" />
           <entry key="gitignore" value="5" />
-          <entry key="java" value="98" />
+          <entry key="java" value="100" />
           <entry key="md" value="18" />
           <entry key="properties" value="12" />
           <entry key="xml" value="43" />
-          <entry key="yml" value="38" />
+          <entry key="yml" value="40" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CLASS" value="7" />
-          <entry key="JAVA" value="98" />
+          <entry key="CLASS" value="8" />
+          <entry key="JAVA" value="100" />
           <entry key="Markdown" value="18" />
           <entry key="PLAIN_TEXT" value="5" />
           <entry key="Properties" value="12" />
           <entry key="XML" value="43" />
-          <entry key="YAML" value="38" />
+          <entry key="YAML" value="40" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="2107" />
+          <entry key="java" value="2114" />
           <entry key="md" value="1121" />
           <entry key="properties" value="297" />
           <entry key="txt" value="3" />
           <entry key="xml" value="623" />
-          <entry key="yml" value="1208" />
+          <entry key="yml" value="1219" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="2107" />
+          <entry key="JAVA" value="2114" />
           <entry key="Markdown" value="1121" />
           <entry key="PLAIN_TEXT" value="3" />
           <entry key="Properties" value="297" />
           <entry key="XML" value="623" />
-          <entry key="YAML" value="1208" />
+          <entry key="YAML" value="1219" />
         </counts>
       </usages-collector>
     </session>
@@ -94,8 +85,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/config-client/src/main/java/com/cloudconfigclient/demo/configclient/controller/ConfigController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="185">
-              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+            <state relative-caret-position="140">
+              <caret line="15" column="37" lean-forward="true" selection-start-line="15" selection-start-column="37" selection-end-line="15" selection-end-column="37" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#421#422#0" expanded="true" />
@@ -110,8 +101,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config-repo/config-dev.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="17" column="6" selection-start-line="17" selection-start-column="2" selection-end-line="17" selection-end-column="6" />
+            <state relative-caret-position="330">
+              <caret line="15" selection-start-line="15" selection-end-line="15" />
             </state>
           </provider>
         </entry>
@@ -128,8 +119,48 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config-client/src/main/java/com/cloudconfigclient/demo/configclient/ConfigClientApplication.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="88">
-              <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
+            <state relative-caret-position="196">
+              <caret line="12" column="5" lean-forward="true" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
+              <folding>
+                <element signature="e#439#440#0" expanded="true" />
+                <element signature="e#513#514#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot/2.0.3.RELEASE/spring-boot-2.0.3.RELEASE-sources.jar!/org/springframework/boot/SpringApplication.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="182">
+              <caret line="263" column="8" lean-forward="true" selection-start-line="263" selection-start-column="8" selection-end-line="263" selection-end-column="8" />
+              <folding>
+                <element signature="e#9666#9667#0" expanded="true" />
+                <element signature="e#9699#9700#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot/2.0.3.RELEASE/spring-boot-2.0.3.RELEASE-sources.jar!/org/springframework/boot/builder/SpringApplicationBuilder.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="162">
+              <caret line="90" selection-start-line="90" selection-end-line="90" />
+              <folding>
+                <element signature="e#3036#3037#0" expanded="true" />
+                <element signature="e#3532#3533#0" expanded="true" />
+                <element signature="e#3576#3577#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/cloud/spring-cloud-context/2.0.0.RELEASE/spring-cloud-context-2.0.0.RELEASE.jar!/org/springframework/cloud/bootstrap/BootstrapApplicationListener.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="280">
+              <caret line="144" selection-start-line="144" selection-end-line="144" />
             </state>
           </provider>
         </entry>
@@ -137,20 +168,26 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config-client/src/main/resources/application.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
-              <caret line="13" column="7" selection-start-line="13" selection-start-column="7" selection-end-line="13" selection-end-column="7" />
+            <state relative-caret-position="110">
+              <caret line="5" column="36" lean-forward="true" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="36" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="384">
-                <caret line="114" column="14" selection-start-line="114" selection-start-column="14" selection-end-line="114" selection-end-column="14" />
-              </first_editor>
-              <second_editor />
+        <entry file="file://$PROJECT_DIR$/config-repo/spring-cloud-config-client-dev.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="44">
+              <caret line="2" column="14" lean-forward="true" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config-repo/spring-cloud-config-client-pro.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="44">
+              <caret line="2" column="14" lean-forward="true" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -183,9 +220,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/provider/src/main/java/com/serverprovide/demo/provider/controller/HelloController.java" />
-        <option value="$PROJECT_DIR$/consumer/src/main/java/com/serverconsume/demo/consumer/controller/ConsumerController.java" />
-        <option value="$PROJECT_DIR$/consumer/src/main/java/com/serverconsume/demo/consumer/controller/ConsumerController1.java" />
         <option value="$PROJECT_DIR$/consumer/src/main/java/com/serverconsume/demo/consumer/controller/ConsumerController2.java" />
         <option value="$PROJECT_DIR$/consumer/src/main/java/com/serverconsume/demo/consumer/controller/RestTemplateConfig.java" />
         <option value="$PROJECT_DIR$/consumer/src/main/java/com/serverconsume/demo/consumer/controller/RestTemplateConfig3.java" />
@@ -230,10 +264,13 @@
         <option value="$PROJECT_DIR$/config-client/src/main/java/com/cloudconfigclient/demo/configclient/ConfigClientApplication.java" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/config-client/src/main/resources/bootstrap.yml" />
-        <option value="$PROJECT_DIR$/config-client/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/config-repo/config-pro.yml" />
-        <option value="$PROJECT_DIR$/config-repo/config-dev.yml" />
         <option value="$PROJECT_DIR$/config-client/src/main/java/com/cloudconfigclient/demo/configclient/controller/ConfigController.java" />
+        <option value="$PROJECT_DIR$/config-client/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/config-repo/config-dev.yml" />
+        <option value="$PROJECT_DIR$/config-repo/spring-cloud-config-client.yml" />
+        <option value="$PROJECT_DIR$/config-repo/spring-cloud-config-client-dev.yml" />
+        <option value="$PROJECT_DIR$/config-repo/spring-cloud-config-client-pro.yml" />
       </list>
     </option>
   </component>
@@ -789,7 +826,7 @@
     <property name="RequestMappingsPanelWidth2" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551420453536" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551421089119" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -798,25 +835,25 @@
     <property name="settings.editor.selected.configurable" value="spring" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\anew_project\myself_item\springcloud\config-client\src\main\resources" />
+      <recent name="C:\anew_project\myself_item\springcloud\eureka-server" />
+      <recent name="C:\anew_project\myself_item\springcloud\eureka-server\src" />
+      <recent name="C:\anew_project\myself_item\springcloud\.idea" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.cloudconfigclient.demo.configclient" />
       <recent name="com.hystrix.demo.hystrix" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\anew_project\myself_item\springcloud\config-client\src\main\resources" />
-      <recent name="C:\anew_project\myself_item\springcloud\cloud-config\src\main\resources" />
-      <recent name="C:\anew_project\myself_item\springcloud\config-repo" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.hystrix.demo.hystrix.controller" />
       <recent name="com.hystrix.demo.hystrix" />
       <recent name="com.serverconsume.demo.consumer.controller" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\anew_project\myself_item\springcloud\config-repo" />
       <recent name="C:\anew_project\myself_item\springcloud\config-client\src\main\resources" />
-      <recent name="C:\anew_project\myself_item\springcloud\eureka-server" />
-      <recent name="C:\anew_project\myself_item\springcloud\eureka-server\src" />
-      <recent name="C:\anew_project\myself_item\springcloud\.idea" />
+      <recent name="C:\anew_project\myself_item\springcloud\cloud-config\src\main\resources" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -906,7 +943,7 @@
       <workItem from="1551236680208" duration="4643000" />
       <workItem from="1551249236407" duration="13408000" />
       <workItem from="1551316587130" duration="23859000" />
-      <workItem from="1551402829712" duration="11145000" />
+      <workItem from="1551402829712" duration="11780000" />
     </task>
     <task id="LOCAL-00001" summary="0.0">
       <created>1551340638076</created>
@@ -950,17 +987,24 @@
       <option name="project" value="LOCAL" />
       <updated>1551346798967</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="0.0">
+      <created>1551420479701</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1551420479701</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="56218000" />
+    <option name="totallyTimeSpent" value="56853000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20469083" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20469083" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -971,7 +1015,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.3991323" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.31487513" />
+      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.41042346" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -981,7 +1025,7 @@
       <window_info anchor="bottom" id="Messages" order="10" weight="0.32899022" />
       <window_info anchor="bottom" id="Java Enterprise" order="11" />
       <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="13" weight="0.3083605" />
+      <window_info anchor="bottom" id="Version Control" order="13" weight="0.23778501" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -1005,17 +1049,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="0.0" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/README.en.md" />
-    <entry file="file://$PROJECT_DIR$/consumer/src/main/java/com/serverconsume/demo/consumer/hystrix/ServiceHystrix.java" />
-    <entry file="file://$PROJECT_DIR$/consumer/src/main/java/com/serverconsume/demo/consumer/hystrix/ListGetFallbackFactory.java" />
-    <entry file="file://$PROJECT_DIR$/eureka-server/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/consumer/src/main/java/com/serverconsume/demo/consumer/hystrix/ClientService.java" />
     <entry file="file://$PROJECT_DIR$/hystrix/src/main/java/com/hystrix/demo/hystrix/HystrixController.java" />
     <entry file="file://$PROJECT_DIR$/consumer/src/main/java/com/serverconsume/demo/consumer/controller/RestTemplateConfig3.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -1261,13 +1294,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config-client/src/main/java/com/cloudconfigclient/demo/configclient/ConfigClientApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cloud-config/src/main/resources/application.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
@@ -1292,13 +1318,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config-client/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="13" column="7" selection-start-line="13" selection-start-column="7" selection-end-line="13" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/5.0.7.RELEASE/spring-beans-5.0.7.RELEASE.jar!/org/springframework/beans/factory/annotation/Value.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
@@ -1320,17 +1339,79 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot/2.0.3.RELEASE/spring-boot-2.0.3.RELEASE-sources.jar!/org/springframework/boot/builder/SpringApplicationBuilder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="90" selection-start-line="90" selection-end-line="90" />
+          <folding>
+            <element signature="e#3036#3037#0" expanded="true" />
+            <element signature="e#3532#3533#0" expanded="true" />
+            <element signature="e#3576#3577#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/cloud/spring-cloud-context/2.0.0.RELEASE/spring-cloud-context-2.0.0.RELEASE.jar!/org/springframework/cloud/bootstrap/BootstrapApplicationListener.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="144" selection-start-line="144" selection-end-line="144" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config-client/src/main/java/com/cloudconfigclient/demo/configclient/ConfigClientApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="12" column="5" lean-forward="true" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
+          <folding>
+            <element signature="e#439#440#0" expanded="true" />
+            <element signature="e#513#514#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot/2.0.3.RELEASE/spring-boot-2.0.3.RELEASE-sources.jar!/org/springframework/boot/SpringApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="263" column="8" lean-forward="true" selection-start-line="263" selection-start-column="8" selection-end-line="263" selection-end-column="8" />
+          <folding>
+            <element signature="e#9666#9667#0" expanded="true" />
+            <element signature="e#9699#9700#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config-client/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="5" column="36" lean-forward="true" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/config-repo/config-dev.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="17" column="6" selection-start-line="17" selection-start-column="2" selection-end-line="17" selection-end-column="6" />
+        <state relative-caret-position="330">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config-repo/spring-cloud-config-client-dev.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" column="14" lean-forward="true" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config-repo/spring-cloud-config-client-pro.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" column="14" lean-forward="true" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="14" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config-client/src/main/java/com/cloudconfigclient/demo/configclient/controller/ConfigController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+        <state relative-caret-position="140">
+          <caret line="15" column="37" lean-forward="true" selection-start-line="15" selection-start-column="37" selection-end-line="15" selection-end-column="37" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#421#422#0" expanded="true" />

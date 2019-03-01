@@ -6,7 +6,7 @@ spring:
     name: spring-cloud-config-client
   cloud:
     config:
-      name: config-client
+      name: config-repo
       uri: http://localhost:8084/     # 注册中心的url
       label: master
       profile: dev

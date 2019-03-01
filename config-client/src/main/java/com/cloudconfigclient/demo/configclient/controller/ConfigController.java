@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class ConfigController {
 
-    @Value("${spring.application.name}")
+    @Value("${yml.text}")
     String configText;
 
     @RequestMapping("/getConfigText")
