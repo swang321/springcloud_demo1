@@ -3,6 +3,8 @@
 #### 介绍
 spring cloud 练习
 
+参考    http://www.ityouknow.com/spring-cloud.html
+
 #### 使用说明
 
 1 新建 maven 空项目  spring cloud 作为父工程
