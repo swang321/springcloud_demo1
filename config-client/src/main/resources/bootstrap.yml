@@ -1,0 +1,41 @@
+#spring:
+#  cloud:
+#    config:
+#      name: spring-cloud-config-client
+#      profile: dev
+#      uri: http://localhost:8084/
+#      label: master                     # 远程仓库的分支
+#      discovery:
+#        enabled: true
+#        service-id: cloud-config
+#
+#server:
+#  port: 8085
+
+
+spring:
+  cloud:
+    config:
+      name: config-dev.yml
+      profile: pro                                 #   环境
+      uri: http://localhost:8084/
+      label: master                               # 远程仓库的分支
+
+
+#  /{application}/{profile}[/{label}]
+#  /{application}-{profile}.yml
+#  /{label}/{application}-{profile}.yml
+#  /{application}-{profile}.properties
+#  /{label}/{application}-{profile}.properties
+
+
+#  spring.application.name：对应{application}部分
+#  spring.cloud.config.profile：对应{profile}部分
+#  spring.cloud.config.label：对应git的分支。如果配置中心使用的是本地存储，则该参数无用
+#  spring.cloud.config.uri：配置中心的具体地址
+#  spring.cloud.config.discovery.service-id：指定配置中心的service-id，便于扩展为高可用配置集群。
+
+#  上面这些与spring-cloud相关的属性必须配置在bootstrap.yml中，
+#  config部分内容才能被正确加载。因为config的相关配置会先于application.yml，
+
+#  而bootstrap.yml的加载也是先于application.yml。

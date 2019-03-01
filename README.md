@@ -115,3 +115,5 @@ spring cloud 练习
 7.2     读取服务端 
 
 http://localhost:8085/getConfigText    
+
+8
