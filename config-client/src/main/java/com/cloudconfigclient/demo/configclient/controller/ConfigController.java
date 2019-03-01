@@ -10,12 +10,12 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class ConfigController {
 
-    @Value("${from}")
-    private String text;
+    @Value("${spring.application.name}")
+    String configText;
 
-    @RequestMapping("/from")
+    @RequestMapping("/getConfigText")
     public String from() {
-        return this.text;
+        return this.configText;
     }
 
     @RequestMapping

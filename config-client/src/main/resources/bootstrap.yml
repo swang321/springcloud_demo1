@@ -1,7 +1,0 @@
-spring:
-  cloud:
-    config:
-      discovery:
-        enabled: true
-        service-id: cloud-config  # 注册中心的服务名
-      profile: dev  # 指定配置文件的环境

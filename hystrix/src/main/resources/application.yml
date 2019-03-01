@@ -9,11 +9,15 @@ eureka:
     serviceUrl:
       defaultZone: http://localhost:8080/eureka/
 turbine:
-  # 配置Eureka中的serviceId列表，表明监控哪些服务  # 服务的 spring application name
-  app-config: spring-cloud-consumer,spring-cloud-producer
   aggregator:
-    #指定聚合哪些集群，多个使用”,”分割，默认为default
+
+  #指定聚合哪些集群，多个使用”,”分割，默认为default
     cluster-config: default
+
+  # 配置Eureka中的serviceId列表，表明监控哪些服务  # 服务的 spring application name
+  app-config: spring-cloud-hystrix   # spring-cloud-consumer,spring-cloud-producer
+
   cluster-name-expression: new String("default")
   #  开启 hostname + port  组合 监控
   combine-host-port: true
+#  instanceUrlSuffix: /hystrix.stream

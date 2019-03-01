@@ -3,10 +3,7 @@
 #### 介绍
 spring cloud 练习
 
-
 #### 使用说明
-
-
 
 1 新建 maven 空项目  spring cloud 作为父工程
 
@@ -72,9 +69,49 @@ spring cloud 练习
     3   访问  http://localhost:8083/hystrix  首页
     4   输入  http://localhost:8083/actuator/hystrix.stream   点击 Monitor Stream 出现 监控页面  熔断监控完成
     5   turbine 是  hystrix.stream 的集合显示
-    
-    spring cloud-config 配置中心
-    
-    http://localhost:8084/config/pro
-    http://localhost:8084/config/dev
-    
+        
+        5-1 添加依赖    
+                <dependency>
+                    <groupId>org.springframework.cloud</groupId>
+                    <artifactId>spring-cloud-starter-netflix-turbine</artifactId>
+                </dependency>
+        5-2 启动类添加注解    @EnableTurbine    //启用 turbine
+        5-3 修改配置bean   （添加 /hystrix.stream mapping）   因版本不同
+                @Bean
+                public ServletRegistrationBean getServlet() {
+                    HystrixMetricsStreamServlet streamServlet = new HystrixMetricsStreamServlet();
+                    ServletRegistrationBean registrationBean = new ServletRegistrationBean(streamServlet);
+                    registrationBean.setLoadOnStartup(1);
+                    String[] urlMappings = {"/actuator/hystrix.stream", "/hystrix.stream"};
+                    registrationBean.addUrlMappings(urlMappings);
+                    registrationBean.setName("HystrixStreamServletBean");
+                    return registrationBean;
+                }
+                
+7    spring cloud-config 配置中心  （git）
+     
+7.1    读取 config 中心
+     
+     1  在 git 上面创建一个文件夹 放上配置文件，  例  （config-repo）
+     2  添加依赖
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-config-server</artifactId>
+        </dependency>
+     3  yml
+         spring:
+           cloud:
+             config:
+               server:
+                 git:
+                   uri: *******  # 配置git仓库的地址
+                   search-paths: /config-repo                      # git仓库地址下的相对地址，可以配置多个，用,分割。
+                   username: *******                             # git仓库的账号
+                   password: *******                           # git仓库的密码
+     4  启动类添加 @EnableConfigServer 激活配置中心支持
+     5  访问  http://localhost:8084/config/pro        http://localhost:8084/config/dev 读取配置数据
+             http://localhost:8084/config-pro.yml    http://localhost:8084/config-dev.yml
+   
+7.2     读取服务端 
+
+http://localhost:8085/getConfigText    
