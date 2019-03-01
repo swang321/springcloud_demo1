@@ -11,6 +11,8 @@ eureka:
       #  需要注册到的地址
       defaultZone: http://localhost:8080/eureka/
 
+
+
 #
 #  /{application}/{profile}[/{label}]
 #  /{application}-{profile}.yml

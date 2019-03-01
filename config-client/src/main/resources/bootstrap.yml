@@ -11,7 +11,7 @@
 spring:
   cloud:
     config:
-      name: whh-config
+      name: spring-cloud-config-client
       profile: pro                                 #   环境
       uri: http://localhost:8084/
       label: master                               # 远程仓库的分支

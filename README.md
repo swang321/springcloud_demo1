@@ -114,6 +114,34 @@ spring cloud 练习
    
 7.2     读取服务端 
 
-http://localhost:8085/getConfigText    
-
-8
+     1  导入依赖
+     2  启动类添加注解 @EnableDiscoveryClient
+     3  添加 bootstrap.yml
+     
+        spring:
+          cloud:
+            config:
+              name: spring-cloud-config-client
+              profile: pro                                 #   环境
+              uri: http://localhost:8084/                   #  注册中心得地址
+              label: master                               # 远程仓库的分支
+   
+     eg: spring-cloud-config-client-pro.yml
+         spring.cloud.config.name  ->  spring-cloud-config-client
+         spring.cloud.config.profile  ->  pro
+    4   新建 controller
+                //  yml.text  是 spring-cloud-config-client-pro.yml  里面得属性值
+                @Value("${yml.text}")
+                String configText;
+            
+                @RequestMapping("/getConfigText")
+                public String from() {
+                    return this.configText;
+                }
+            
+                @RequestMapping
+                public String hello() {
+                    return "hello";
+                }
+                
+    5  访问       http://localhost:8085/getConfigText    im pro
