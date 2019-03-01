@@ -3,13 +3,7 @@ server:
 
 spring:
   application:
-    name: spring-cloud-config-client
-  cloud:
-    config:
-      name: config-repo
-      uri: http://localhost:8084/     # 注册中心的url
-      label: master
-      profile: dev
+    name: config-client
 
 eureka:
   client:
@@ -17,15 +11,13 @@ eureka:
       #  需要注册到的地址
       defaultZone: http://localhost:8080/eureka/
 
-#spring:
-#  cloud:
-#    config:
-#      name: config-client
-#      uri: http://localhost:8084/     # 注册中心的url
-#      label: master
-#      discovery:
-#        enabled: true
-#        service-id: cloud-config  # 注册中心的服务名
+#
+#  /{application}/{profile}[/{label}]
+#  /{application}-{profile}.yml
+#  /{label}/{application}-{profile}.yml
+#  /{application}-{profile}.properties
+#  /{label}/{application}-{profile}.properties
+
 
 #  spring.application.name：对应{application}部分
 #  spring.cloud.config.profile：对应{profile}部分

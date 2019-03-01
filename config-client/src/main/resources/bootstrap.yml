@@ -8,15 +8,10 @@
 #      discovery:
 #        enabled: true
 #        service-id: cloud-config
-#
-#server:
-#  port: 8085
-
-
 spring:
   cloud:
     config:
-      name: config-dev.yml
+      name: whh-config
       profile: pro                                 #   环境
       uri: http://localhost:8084/
       label: master                               # 远程仓库的分支
