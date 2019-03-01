@@ -1,17 +1,6 @@
 # 开发环境
 
-server:
-  port: 8081
 
-spring:
-  application:
-    name: kaifa
-
-eureka:
-  client:
-    serviceUrl:
-      #  需要注册到的地址
-      defaultZone: http://localhost:8080/eureka/
 
 
 
