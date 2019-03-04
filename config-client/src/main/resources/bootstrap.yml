@@ -16,6 +16,12 @@ spring:
       uri: http://localhost:8084/
       label: master                               # 远程仓库的分支
 
+management:
+  endpoints:
+    web:
+      exposure:
+        include: refresh,health,info
+
 
 #  /{application}/{profile}[/{label}]
 #  /{application}-{profile}.yml

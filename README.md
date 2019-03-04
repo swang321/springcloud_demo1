@@ -147,3 +147,19 @@ spring cloud 练习
                 }
                 
     5  访问       http://localhost:8085/getConfigText    im pro
+    
+    6  开启更新机制  @RefreshScope
+        1   在需要动态更新的类上面加上 @RefreshScope 
+        2   需要把 refresh 的接口暴露出来才可以访问
+        3   在 bootstrap 中添加
+            management:
+              endpoints:
+                web:
+                  exposure:
+                    include: refresh,health,info
+        4   访问 http://localhost:8085/getConfigText       返回信息
+        5   在git仓库里面把  配置文件（spring-cloud-config-client-pro.yml）的 yml.text 改成其他的
+        6   访问 http://localhost:8085/actuator/refresh 返回 一串信息，再访问第四步，返回的是更新后的数据
+        7   每次手动刷新客户端也很麻烦 可以配置  webhook 服务端刷新，码云 github  都支持
+        8   配置 webhook 需要填写一个公网的 HTTP URL     可以用免费的 natapp内网穿透（自己百度）
+        9   填写url后  每次配置文件 更新提交后  就自动刷新配置文件了。

@@ -24,9 +24,9 @@ public class ConfigController {
         return this.configText;
     }
 
-    @RequestMapping
+    @RequestMapping("/getConfigText1")
     public String hello() {
-        return "hello";
+        return "getConfigText1";
     }
 
 }
