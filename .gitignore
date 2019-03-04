@@ -16,7 +16,7 @@
 *.iml
 *.ipr
 
-.idea/*.xml
+###     .idea/*.xml    ###
 
 ### NetBeans ###
 /nbproject/private/
