@@ -16,4 +16,4 @@ eureka:
 
 
 yml:
-  text: im dev  config-dev
+  text: config-dev.yml im dev  config-dev
