@@ -162,4 +162,12 @@ spring cloud 练习
         6   访问 http://localhost:8085/actuator/refresh 返回 一串信息，再访问第四步，返回的是更新后的数据
         7   每次手动刷新客户端也很麻烦 可以配置  webhook 服务端刷新，码云 github  都支持
         8   配置 webhook 需要填写一个公网的 HTTP URL     可以用免费的 natapp内网穿透（自己百度）
-        9   填写url后  每次配置文件 更新提交后  就自动刷新配置文件了。
+        9   再码云填写完毕后 就会报错 400   
+            Failed to read HTTP message: org.springframework.http.converter.HttpMessageNotReadableException: 
+            JSON parse error: Cannot deserialize instance of `java.lang.String` out of START_ARRAY token; 
+            nested exception is com.fasterxml.jackson.databind.exc.MismatchedInputException: 
+            Cannot deserialize instance of `java.lang.String` out of START_ARRAY token
+        10  报错是因为无法正常序列化json  配置了 webhook  ，每次更新会发送很多数据给后台，而 refresh接口不需要 参数就可以，
+            写拦截器或者过滤器 对请求参数body 的数据做一个修改就行了。过滤器拦截不到此接口（没有深入理解，自行百度）
+            故写的一个拦截器来拦截对body数据重新封装
+        11  填写url后  每次配置文件 更新提交后  就自动刷新配置文件了。
