@@ -132,7 +132,7 @@ spring cloud 练习
          spring.cloud.config.name  ->  spring-cloud-config-client
          spring.cloud.config.profile  ->  pro
     4   新建 controller
-                //  yml.text  是 spring-cloud-config-client-pro.yml  里面得属性值
+                //  ${yml.text}  是 spring-cloud-config-client-pro.yml  里面得属性值
                 @Value("${yml.text}")
                 String configText;
             
