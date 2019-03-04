@@ -114,7 +114,7 @@ spring cloud 练习
      5  访问  http://localhost:8084/config/pro        http://localhost:8084/config/dev 读取配置数据
              http://localhost:8084/config-pro.yml    http://localhost:8084/config-dev.yml
    
-7.2     读取服务端 
+7.2     读取服务端 配置中心的配置文件 
 
      1  导入依赖
      2  启动类添加注解 @EnableDiscoveryClient
@@ -171,3 +171,19 @@ spring cloud 练习
             写拦截器或者过滤器 对请求参数body 的数据做一个修改就行了。过滤器拦截不到此接口（没有深入理解，自行百度）
             故写的一个拦截器来拦截对body数据重新封装
         11  填写url后  每次配置文件 更新提交后  就自动刷新配置文件了。
+
+7.3     读取服务端 配置中心的配置文件 （高可用）
+        把 uri  去掉  加上 service-id   当配置中心 换一个服务器也不用改客户端  根据 配置中心的服务名字就可以找到
+        bootstrap.yml
+        spring:
+          application:
+            name: config-client
+          cloud:
+            config:
+              name: spring-cloud-config-client
+              profile: pro                                 #   环境
+        #      uri: http://localhost:8084/
+              label: master                               # 远程仓库的分支
+              discovery:
+                service-id: cloud-config
+                enabled: true

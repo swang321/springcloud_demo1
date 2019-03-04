@@ -1,20 +1,15 @@
-package com.cloudconfigclient.demo.configclient;
+package com.configclientbus.demo.configclientbus;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 
-
 @EnableDiscoveryClient
 @SpringBootApplication
-public class ConfigClientApplication {
+public class ConfigClientBusApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(ConfigClientApplication.class, args);
+        SpringApplication.run(ConfigClientBusApplication.class, args);
     }
 
 }
-
-
-
-

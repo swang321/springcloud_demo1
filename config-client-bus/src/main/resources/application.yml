@@ -1,0 +1,13 @@
+spring:
+  cloud:
+    bus:
+      refresh:
+        enabled: true         # 开启消息跟踪
+
+  rabbitmq:
+    host:
+    port:
+    username:
+    password:
+
+
