@@ -1,0 +1,29 @@
+server:
+  port: 8087
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8080/eureka/
+
+spring:
+  application:
+    name: gateway-service-zuul
+
+
+
+
+#zuul:
+#  routes:
+#    api-a:                              #   api-a 自己定义得  随意填
+#      path: /api-a/**                   #   以/api-a/开头得请求都转发给 服务名为 a  服务
+#      serviceId: a
+#
+#    api-b:
+#      path: /api-b/**
+#      serviceId: b
+zuul:
+  routes:
+    my:
+      path: /api-zuul/test1
+      url: http://localhost/8082/info1

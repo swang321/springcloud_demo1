@@ -13,12 +13,13 @@
         <module name="eureka-server" />
         <module name="hystrix" />
         <module name="provider" />
-        <module name="zipkin-server" />
+        <module name="zuul" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="eureka-client" target="1.8" />
       <module name="hystrix-trubine" target="1.8" />
+      <module name="zipkin-server" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
