@@ -23,11 +23,30 @@ spring:
         service-id: cloud-config
         enabled: true
 
+
+    bus:
+      refresh:
+        enabled: true
+      trace:
+        enabled: true         # 开启消息跟踪
+
+  # 登陆rabbitmq 后台 是 ip+15672
+  # 后台里面有一个  port and contexts amqp                       5672
+  #                                clustering                 25672
+  #                                RabbitMQ Management        15672
+  #  对应不同的端口   这个位置的端口需要填写  5672
+  rabbitmq:
+    host: 192.168.135.129
+    port: 5672
+    username: swang
+    password: swang
+
 management:
   endpoints:
     web:
       exposure:
-        include: refresh,health,info
+        include: "*"
+#        include: refresh,health,info
 
 
 #  /{application}/{profile}[/{label}]

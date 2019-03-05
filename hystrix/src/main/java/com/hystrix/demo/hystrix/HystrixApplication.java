@@ -11,7 +11,9 @@ import org.springframework.cloud.netflix.hystrix.dashboard.EnableHystrixDashboar
 import org.springframework.cloud.netflix.turbine.EnableTurbine;
 import org.springframework.context.annotation.Bean;
 
-
+/**
+ * 断路器 服务熔断 服务监控
+ */
 @EnableCircuitBreaker   //启用熔断
 @EnableHystrix
 @EnableDiscoveryClient

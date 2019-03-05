@@ -13,6 +13,7 @@
         <module name="eureka-server" />
         <module name="hystrix" />
         <module name="provider" />
+        <module name="zipkin-server" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

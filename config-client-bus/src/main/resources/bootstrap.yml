@@ -1,10 +1,6 @@
 server:
   port: 8086
 
-#spring:
-#  application:
-#    name: config-client
-
 eureka:
   client:
     serviceUrl:
@@ -17,33 +13,33 @@ spring:
     config:
       name: spring-cloud-config-client
       profile: pro                                 #   环境
-#      uri: http://localhost:8084/
+      #      uri: http://localhost:8084/
       label: master                               # 远程仓库的分支
       discovery:
         service-id: cloud-config
         enabled: true
 
+    bus:
+      refresh:
+        enabled: true
+      trace:
+        enabled: true         # 开启消息跟踪
+
+  # 登陆rabbitmq 后台 是 ip+15672
+  # 后台里面有一个  port and contexts amqp                       5672
+  #                                clustering                 25672
+  #                                RabbitMQ Management        15672
+  #  对应不同的端口   这个位置的端口需要填写  5672
+  rabbitmq:
+    host: 192.168.135.129
+    port: 5672
+    username: swang
+    password: swang
+
+
 management:
   endpoints:
     web:
       exposure:
-        include: refresh,health,info
-
-
-#  /{application}/{profile}[/{label}]
-#  /{application}-{profile}.yml
-#  /{label}/{application}-{profile}.yml
-#  /{application}-{profile}.properties
-#  /{label}/{application}-{profile}.properties
-
-
-#  spring.application.name：对应{application}部分
-#  spring.cloud.config.profile：对应{profile}部分
-#  spring.cloud.config.label：对应git的分支。如果配置中心使用的是本地存储，则该参数无用
-#  spring.cloud.config.uri：配置中心的具体地址
-#  spring.cloud.config.discovery.service-id：指定配置中心的service-id，便于扩展为高可用配置集群。
-
-#  上面这些与spring-cloud相关的属性必须配置在bootstrap.yml中，
-#  config部分内容才能被正确加载。因为config的相关配置会先于application.yml，
-
-#  而bootstrap.yml的加载也是先于application.yml。
+        include: "*"    # 也可以改为"*"来暴露所有接口
+#        include: refresh,health,info,bus-refresh    # 也可以改为"*"来暴露所有接口

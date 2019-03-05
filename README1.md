@@ -173,12 +173,14 @@ spring cloud 练习
         11  填写url后  每次配置文件 更新提交后  就自动刷新配置文件了。
 
 7.3     读取服务端 配置中心的配置文件 （高可用）
+
         把 uri  去掉  加上 service-id   当配置中心 换一个服务器也不用改客户端  根据 配置中心的服务名字就可以找到
         bootstrap.yml
         spring:
           application:
             name: config-client
           cloud:
+          
             config:
               name: spring-cloud-config-client
               profile: pro                                 #   环境

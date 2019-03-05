@@ -1,13 +1,15 @@
-spring:
-  cloud:
-    bus:
-      refresh:
-        enabled: true         # 开启消息跟踪
-
-  rabbitmq:
-    host:
-    port:
-    username:
-    password:
+#spring:
+#  cloud:
+#    bus:
+#      refresh:
+#        enabled: true         # 开启消息跟踪
+#      trace:
+#        enabled: true         # 开启消息跟踪
+#
+#  rabbitmq:
+#    host: http://192.168.135.129
+#    port: 15672
+#    username: guest
+#    password: guest
 
 

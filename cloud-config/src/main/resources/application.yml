@@ -18,3 +18,28 @@ spring:
           search-paths: /config-repo                      # git仓库地址下的相对地址，可以配置多个，用,分割。
           username: 978530201@qq.com                             # git仓库的账号
           password: gjm456...                            # git仓库的密码
+
+
+    bus:
+      refresh:
+        enabled: true         # 开启消息跟踪
+      trace:
+        enabled: true         # 开启消息跟踪
+
+  # 登陆rabbitmq 后台 是 ip+15672
+  # 后台里面有一个  port and contexts amqp                       5672
+  #                                clustering                 25672
+  #                                RabbitMQ Management        15672
+  #  对应不同的端口   这个位置的端口需要填写  5672
+  rabbitmq:
+    host: 192.168.135.129
+    port: 5672
+    username: swang
+    password: swang
+
+#   暴露所有得接口
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
