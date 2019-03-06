@@ -1,6 +1,7 @@
 package com.serverconsume.demo.consumer.controller;
 
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
 
@@ -12,7 +13,7 @@ import java.util.List;
 @RestController
 public class ConsumerController1 {
 
-    @GetMapping("/info1")
+    @RequestMapping("/info1")
     public List consume() {
         RestTemplate restTemplate = new RestTemplate();
         // 1.第一种方式，直接使用。缺点：需要指定url地址，不灵活，也无法适应多个地址

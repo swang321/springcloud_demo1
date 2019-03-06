@@ -12,12 +12,25 @@ import java.util.List;
 @RestController
 public class HelloController {
 
-    @RequestMapping("list")
+    @RequestMapping("/list")
     public List<String> list() {
         List<String> list = new ArrayList<>();
         list.add("1");
         list.add("2");
         return list;
     }
+
+
+    @RequestMapping("/test1")
+    public String zuulTest() {
+        return "provider zuu1";
+    }
+
+
+    @RequestMapping("/test2")
+    public String zuulTes2() {
+        return "provider zuu2";
+    }
+
 
 }
