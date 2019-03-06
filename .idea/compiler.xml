@@ -13,6 +13,7 @@
         <module name="eureka-server" />
         <module name="hystrix" />
         <module name="provider" />
+        <module name="zikin-server" />
         <module name="zuul" />
       </profile>
     </annotationProcessing>
@@ -20,6 +21,7 @@
       <module name="eureka-client" target="1.8" />
       <module name="hystrix-trubine" target="1.8" />
       <module name="zipkin-server" target="1.8" />
+      <module name="zuul-filter" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

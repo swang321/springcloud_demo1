@@ -54,7 +54,7 @@ spring cloud 练习
     1   应该保证服务得单一职责原则，应该让配置中心去刷新 配置文件得更新，对配置中心服务添加 rabbitmq得支持，然后
         webhooks  post指向配置中心 刷新就可以刷新 了
         
-9   gateway-service-zuul (服务网关)
+9   service-zuul (服务网关)
     
     1   启动类添加   @EnableZuulProxy 开启网关代理 添加到注册中心
     2   添加依赖
@@ -79,4 +79,39 @@ spring cloud 练习
             获取数据应该通过调用服务接口的方式进行获取
             经常需要获取的数据有必要缓存到redis中，例如需要进行简单的权限缓存
     
+9.1   service-zuul (服务网关)    filter  鉴权
     
+    1   修改 zuul  module  添加 tokenfilter 类  注册 bean   
+    2   访问  http://localhost:8087/api-a/list  返回    token is empty
+        访问  http://localhost:8087/api-a/list?token=test  返回  <List><item>1</item><item>2</item></List>
+
+9.2   service-zuul (服务网关)    路由熔断  服务可以自动进行降级
+
+    1   添加 ProviderFallback 实现 FallbackProvider的方法  
+    2   请求 http://localhost:8087/api-a/list 接口  而 spring-cloud-producer 服务挂掉时  返回 the service is unavailable.
+    
+9.3   service-zuul (服务网关)    路由重试      
+    
+    1   eg.有时候因为网络或者其它原因，服务可能会暂时的不可用，这个时候我们希望可以再次对服务进行重试
+    2   添加依赖 
+                <dependency>
+                    <groupId>org.springframework.retry</groupId>
+                    <artifactId>spring-retry</artifactId>
+                </dependency>
+    3   添加配置
+        zuul:
+          retryable: true   #  是否开启重试功能
+        spring:
+          cloud:
+            loadbalancer:
+              retry:
+                enabled: true        #打开负载局衡器支持重试开关
+    4   更改 服务 spring-cloud-producer  的接口   (/list)添加
+            log.info("come in");
+            try {
+                Thread.sleep(1000000);
+            } catch (InterruptedException e) {
+                log.error(" hello two error", e);
+            }    
+    5   访问    http://localhost:8087/api-a/list      
+        spring-cloud-producer 服务 会输出  两条日志   说明总共请求了两回

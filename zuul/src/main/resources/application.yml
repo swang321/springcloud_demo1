@@ -8,7 +8,13 @@ eureka:
 
 spring:
   application:
-    name: gateway-service-zuul
+    name: service-zuul
+
+  #打开负载局衡器支持重试开关
+  cloud:
+    loadbalancer:
+      retry:
+        enabled: true
 
 zuul:
   routes:
@@ -19,6 +25,14 @@ zuul:
       path: /api-b/**
       serviceId: spring-cloud-consumer
 
+  retryable: true   #  是否开启重试功能
+
+
+
+
+
+#logging:
+#  config: classpath:logback-spring.xml
 
 
 
