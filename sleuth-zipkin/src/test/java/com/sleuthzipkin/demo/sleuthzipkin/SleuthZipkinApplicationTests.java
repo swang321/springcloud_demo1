@@ -1,4 +1,4 @@
-package com.zikinserver.demo.zikinserver;
+package com.sleuthzipkin.demo.sleuthzipkin;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -7,7 +7,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-public class ZikinServerApplicationTests {
+public class SleuthZipkinApplicationTests {
 
     @Test
     public void contextLoads() {
