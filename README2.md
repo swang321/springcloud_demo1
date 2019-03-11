@@ -115,3 +115,42 @@ spring cloud 练习
             }    
     5   访问    http://localhost:8087/api-a/list      
         spring-cloud-producer 服务 会输出  两条日志   说明总共请求了两回
+
+10   sleuth-zipkin (分布式链路跟踪)
+    
+    1   新建 module sleuth-zipkin，引入依赖
+                <!-- 引入zipkin-server -->
+                <dependency>
+                    <groupId>io.zipkin.java</groupId>
+                    <artifactId>zipkin-server</artifactId>
+                    <version>2.9.4</version>
+                </dependency>
+        
+                <!-- 引入zipkin-server 图形化界面 -->
+                <dependency>
+                    <groupId>io.zipkin.java</groupId>
+                    <artifactId>zipkin-autoconfigure-ui</artifactId>
+                    <version>2.9.4</version>
+                </dependency>
+    2   启动器添加注解 @EnableZipkinServer     //zipkin服务器 默认使用http进行通信
+    3   在 父项目 服务添加 依赖
+           
+                   <!-- 这个依赖包含了sleuth和zipkin -->
+                   <dependency>
+                       <groupId>org.springframework.cloud</groupId>
+                       <artifactId>spring-cloud-starter-zipkin</artifactId>
+                   </dependency>
+        使服务支持 sleuth 和 zipkin
+    4   在   spring-cloud-producer   spring-cloud-consumer  服务中 添加配置 
+    
+        spring:
+          zipkin:
+            base-url: http://localhost:9411/  # zipkin服务器的地址
+            sender:
+              type: web  # 设置使用http的方式传输数据
+          sleuth:
+            sampler:
+              probability: 1  # 设置抽样采集为100%，默认为0.1，即10%
+    5 启动服务 spring-cloud-eurerka spring-cloud-producer spring-cloud-consumer spring-cloud-sleuth-zipkin
+      访问 zipkin 首页 localhost:9411 然后访问 spring-cloud-producer  和 spring-cloud-consumer 
+      的接口，就会显示两个服务的链路

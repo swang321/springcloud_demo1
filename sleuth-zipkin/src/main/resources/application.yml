@@ -1,1 +1,19 @@
+server:
+  port: 9411
 
+spring:
+  application:
+    name: spring-cloud-sleuth-zipkin
+
+#  zipkin服务启动后，访问zipkin的UI  页面出现空白 添加下面配置
+management:
+  metrics:
+    web:
+      server:
+        auto-time-requests: false
+
+#  禁止向中心注册自己
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false

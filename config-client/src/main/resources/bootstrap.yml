@@ -17,7 +17,7 @@ spring:
     config:
       name: spring-cloud-config-client
       profile: pro                                 #   环境
-#      uri: http://localhost:8084/
+      #      uri: http://localhost:8084/
       label: master                               # 远程仓库的分支
       discovery:
         service-id: cloud-config

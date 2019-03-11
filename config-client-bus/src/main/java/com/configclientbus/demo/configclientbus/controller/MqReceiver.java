@@ -13,8 +13,8 @@ public class MqReceiver {
 
 
     @RabbitListener(queues = "myQueue")
-    public void process(String msg){
-        log.info("msg:{}",msg);
+    public void process(String msg) {
+        log.info("msg:{}", msg);
     }
 
 }

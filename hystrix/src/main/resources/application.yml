@@ -11,7 +11,7 @@ eureka:
 turbine:
   aggregator:
 
-  #指定聚合哪些集群，多个使用”,”分割，默认为default
+    #指定聚合哪些集群，多个使用”,”分割，默认为default
     cluster-config: default
 
   # 配置Eureka中的serviceId列表，表明监控哪些服务  # 服务的 spring application name

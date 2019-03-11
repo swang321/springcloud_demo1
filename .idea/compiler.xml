@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="cloud-config" />
+        <module name="config-client" />
+        <module name="config-client-bus" />
+        <module name="consul-producer" />
+        <module name="consumer" />
+        <module name="eureka-server" />
+        <module name="hystrix" />
+        <module name="provider" />
+        <module name="sleuth-zipkin" />
+        <module name="zuul" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="cloud-config" target="1.8" />
+      <module name="config-client" target="1.8" />
+      <module name="config-client-bus" target="1.8" />
+      <module name="consul-producer" target="1.8" />
+      <module name="consumer" target="1.8" />
+      <module name="eureka-server" target="1.8" />
+      <module name="hystrix" target="1.8" />
+      <module name="provider" target="1.8" />
+      <module name="sleuth-zipkin" target="1.8" />
+      <module name="springcloud" target="1.8" />
+      <module name="zuul" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

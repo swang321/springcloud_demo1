@@ -15,8 +15,8 @@ public class TestMain {
         HashMap<Integer, HashMap<Integer, Integer>> mapHashMap = new HashMap<>(16);
 
         HashMap<Integer, Integer> map = new HashMap<>(16);
-        map.put(1,1);
-        map.put(2,2);
+        map.put(1, 1);
+        map.put(2, 2);
 
 
     }

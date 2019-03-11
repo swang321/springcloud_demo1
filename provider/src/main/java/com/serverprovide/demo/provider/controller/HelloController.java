@@ -22,12 +22,12 @@ public class HelloController {
         list.add("2");
 
 
-        log.info("come in");
-        try {
-            Thread.sleep(1000000);
-        } catch (InterruptedException e) {
-            log.error(" hello two error", e);
-        }
+//        log.info("come in");
+//        try {
+//            Thread.sleep(1000000);
+//        } catch (InterruptedException e) {
+//            log.error(" hello two error", e);
+//        }
 
         return list;
     }
