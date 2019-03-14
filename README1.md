@@ -13,7 +13,7 @@ spring cloud 练习
 6   配置中心高可用 
 7   配置中心    spring cloud-config 结合 rabbitmq 做消息总线 
 8   服务网关    zuul
-
+9   sleuth-zipkin 链路追踪
 
 
 
